@@ -8,7 +8,7 @@ namespace TobyMosque.Sample.Service.Net.Entities
     {
         public Guid MovimentID { get; set; }
         public Guid ResourceID { get; set; }
-        public Guid USerID { get; set; }
+        public Guid UserID { get; set; }
         public DataEntities.Enums.MovimentType MovimentTypeID { get; set; }
         public int Quantity { get; set; }
 

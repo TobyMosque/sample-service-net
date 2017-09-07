@@ -8,5 +8,9 @@ namespace TobyMosque.Sample.Service.Net.DataEntities
     {
         public int TenantID { get; set; }
         public string Description { get; set; }
+
+        public ICollection<User> Users { get; set; }
+        public ICollection<Resource> Resources { get; set; }
+        public ICollection<Moviment> Moviments { get; set; }
     }
 }
