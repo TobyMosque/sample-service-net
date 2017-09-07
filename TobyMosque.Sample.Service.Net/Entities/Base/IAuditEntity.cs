@@ -12,6 +12,6 @@ namespace TobyMosque.Sample.Service.Net.Entities
         Guid? SessionID { get; set; }
 
         DataEntities.Session Session { get; set; }
-        AuditEntities.Domain.AuditType TipoHistorico { get; set; }
+        AuditEntities.Domain.AuditType AuditType { get; set; }
     }
 }

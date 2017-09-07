@@ -13,6 +13,7 @@ namespace TobyMosque.Sample.Service.Net.DataEntities
         public int TenantID { get; set; }
         public DateTime CreationDate { get; set; }
 
+        public User User { get; set; }
         public Tenant Tenant { get; set; }
     }
 }
