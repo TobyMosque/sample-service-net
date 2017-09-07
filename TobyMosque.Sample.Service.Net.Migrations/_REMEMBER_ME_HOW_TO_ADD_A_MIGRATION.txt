@@ -1,0 +1,1 @@
+﻿dotnet ef -p ../TobyMosque.Sample.Service.Net.Entities -s ../TobyMosque.Sample.Service.Net.Migrations -o migrations add {MigrationName}
