@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TobyMosque.Sample.Service.Net.AuditEntities
 {
-    public class User : Entities.User, Entities.IAuditEntity
+    public class Resource : Entities.Resource, Entities.IAuditEntity
     {
         public Guid AuditID { get; set; }
         public Enums.AuditType AuditTypeID { get; set; }
@@ -12,7 +12,7 @@ namespace TobyMosque.Sample.Service.Net.AuditEntities
         public Guid? SessionID { get; set; }
 
         public DataEntities.Session Session { get; set; }
-        public DataEntities.User Entity { get; set; }
+        public DataEntities.Resource Entity { get; set; }
         public Domain.AuditType AuditType { get; set; }
     }
 }
