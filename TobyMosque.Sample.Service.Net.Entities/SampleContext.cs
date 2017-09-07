@@ -11,7 +11,7 @@ using TobyMosque.Sample.Service.Net.Entities;
 
 namespace TobyMosque.Sample.Service.Net
 {
-    public class SampleContext : DbContext
+    public abstract class SampleContext : DbContext
     {
         private string _tenantId;
 
@@ -229,7 +229,7 @@ namespace TobyMosque.Sample.Service.Net
             entity.Property(x => x.IsDeleted).IsRequired();
 
             var isHistorico = typeof(IAuditEntity).IsAssignableFrom(typeof(T));
-            entity.HasIndex(new string[] { "TenantID", isHistorico ? "AuditType" : "CreationDate" }).IsUnique().ForSqlServerIsClustered();
+            entity.HasIndex(new string[] { "TenantID", isHistorico ? "AuditDate" : "CreationDate" }).IsUnique().ForSqlServerIsClustered();
             entity.HasIndex(x => x.IsDeleted);
         }
 

@@ -1,1 +1,2 @@
-﻿dotnet ef -p ../TobyMosque.Sample.Service.Net.Entities -s ../TobyMosque.Sample.Service.Net.Migrations -o migrations add {MigrationName}
+﻿dotnet ef -p ../TobyMosque.Sample.Service.Net.SqlServer -s ../TobyMosque.Sample.Service.Net.Migrations migrations add {MigrationName}
+dotnet ef -p ../TobyMosque.Sample.Service.Net.Npgsql -s ../TobyMosque.Sample.Service.Net.Migrations migrations add {MigrationName}

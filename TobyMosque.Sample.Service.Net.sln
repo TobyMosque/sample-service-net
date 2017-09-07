@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TobyMosque.Sample.Service.Net.Entities", "TobyMosque.Sample.Service.Net.Entities\TobyMosque.Sample.Service.Net.Entities.csproj", "{BC30AA42-9C34-46A1-A990-2AE69A200252}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobyMosque.Sample.Service.Net.Migrations", "TobyMosque.Sample.Service.Net.Migrations\TobyMosque.Sample.Service.Net.Migrations.csproj", "{A009249C-D537-48AC-AB74-3EE01B0F0031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TobyMosque.Sample.Service.Net.Migrations", "TobyMosque.Sample.Service.Net.Migrations\TobyMosque.Sample.Service.Net.Migrations.csproj", "{A009249C-D537-48AC-AB74-3EE01B0F0031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobyMosque.Sample.Service.Net.SqlServer", "TobyMosque.Sample.Service.Net.SqlServer\TobyMosque.Sample.Service.Net.SqlServer.csproj", "{00CB0D22-5023-47B7-83BE-1A98111BBC1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobyMosque.Sample.Service.Net.Npgsql", "TobyMosque.Sample.Service.Net.Npgsql\TobyMosque.Sample.Service.Net.Npgsql.csproj", "{49E624DD-54DD-4A7B-8E28-6C8019A3BF9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{A009249C-D537-48AC-AB74-3EE01B0F0031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A009249C-D537-48AC-AB74-3EE01B0F0031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A009249C-D537-48AC-AB74-3EE01B0F0031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CB0D22-5023-47B7-83BE-1A98111BBC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CB0D22-5023-47B7-83BE-1A98111BBC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CB0D22-5023-47B7-83BE-1A98111BBC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CB0D22-5023-47B7-83BE-1A98111BBC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E624DD-54DD-4A7B-8E28-6C8019A3BF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E624DD-54DD-4A7B-8E28-6C8019A3BF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E624DD-54DD-4A7B-8E28-6C8019A3BF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E624DD-54DD-4A7B-8E28-6C8019A3BF9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

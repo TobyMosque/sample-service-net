@@ -32,14 +32,23 @@ namespace TobyMosque.Sample.Service.Net.Migrations
         public static string PostgreSqlConnection { get { return Configuration.Root["connectionStrings:postgreSql"]; } }
     }
 
-    public class SampleContextFactory : IDesignTimeDbContextFactory<SampleContext>
+    public class SampleContextFactory : IDesignTimeDbContextFactory<Npgsql.SampleContext>
     {
-        public SampleContext CreateDbContext(string[] args)
+        public Npgsql.SampleContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<SampleContext>();
-            //optionsBuilder.UseNpgsql(Configuration.SqlServerConnection);
             optionsBuilder.UseNpgsql(Configuration.PostgreSqlConnection);
-            return new SampleContext(optionsBuilder.Options, Configuration.SessionID, Configuration.TenantID);
+            return new Npgsql.SampleContext(optionsBuilder.Options, Configuration.SessionID, Configuration.TenantID);
         }
     }
+
+    //public class SampleContextFactory : IDesignTimeDbContextFactory<SqlServer.SampleContext>
+    //{
+    //    public SqlServer.SampleContext CreateDbContext(string[] args)
+    //    {
+    //        var optionsBuilder = new DbContextOptionsBuilder<SampleContext>();
+    //        optionsBuilder.UseSqlServer(Configuration.SqlServerConnection);
+    //        return new SqlServer.SampleContext(optionsBuilder.Options, Configuration.SessionID, Configuration.TenantID);
+    //    }
+    //}
 }
