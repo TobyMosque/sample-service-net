@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobyMosque.Sample.Service.Net", "TobyMosque.Sample.Service.Net\TobyMosque.Sample.Service.Net.csproj", "{06332DBD-D157-4670-B587-942B5AE91B8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TobyMosque.Sample.Service.Net.Entities", "TobyMosque.Sample.Service.Net.Entities\TobyMosque.Sample.Service.Net.Entities.csproj", "{BC30AA42-9C34-46A1-A990-2AE69A200252}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{06332DBD-D157-4670-B587-942B5AE91B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06332DBD-D157-4670-B587-942B5AE91B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06332DBD-D157-4670-B587-942B5AE91B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06332DBD-D157-4670-B587-942B5AE91B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC30AA42-9C34-46A1-A990-2AE69A200252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC30AA42-9C34-46A1-A990-2AE69A200252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC30AA42-9C34-46A1-A990-2AE69A200252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC30AA42-9C34-46A1-A990-2AE69A200252}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
