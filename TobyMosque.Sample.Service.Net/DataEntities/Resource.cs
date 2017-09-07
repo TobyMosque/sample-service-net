@@ -7,5 +7,6 @@ namespace TobyMosque.Sample.Service.Net.DataEntities
     public class Resource : Entities.Resource
     {
         public ICollection<AuditEntities.Resource> AuditLog { get; set; }
+        public ICollection<Moviment> Moviments { get; set; }
     }
 }
