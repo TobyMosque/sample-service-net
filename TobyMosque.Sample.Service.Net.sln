@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobyMosque.Sample.Service.N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobyMosque.Sample.Service.Net.Npgsql", "TobyMosque.Sample.Service.Net.Npgsql\TobyMosque.Sample.Service.Net.Npgsql.csproj", "{49E624DD-54DD-4A7B-8E28-6C8019A3BF9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobyMosque.Sample.Service.Net", "TobyMosque.Sample.Service.Net\TobyMosque.Sample.Service.Net.csproj", "{AD39C3B8-552D-4483-A66B-3AEA8C11B05C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{49E624DD-54DD-4A7B-8E28-6C8019A3BF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49E624DD-54DD-4A7B-8E28-6C8019A3BF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49E624DD-54DD-4A7B-8E28-6C8019A3BF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD39C3B8-552D-4483-A66B-3AEA8C11B05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD39C3B8-552D-4483-A66B-3AEA8C11B05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD39C3B8-552D-4483-A66B-3AEA8C11B05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD39C3B8-552D-4483-A66B-3AEA8C11B05C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
