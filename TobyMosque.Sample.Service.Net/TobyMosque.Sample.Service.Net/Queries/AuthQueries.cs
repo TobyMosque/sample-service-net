@@ -21,6 +21,10 @@ namespace TobyMosque.Sample.Service.Net.Queries
             .CompileAsyncQuery((SampleContext db, string logon) => db.Users
                 .FirstOrDefault(u => u.Logon == logon));
 
+        private static readonly Func<SampleContext, byte[], Task<Session>> _GetSessionByToken = EF
+            .CompileAsyncQuery((SampleContext db, byte[] token) => db.Sessions
+                .FirstOrDefault(s => s.Token == token && s.IsActive));
+
         internal static async Task<List<Tenant>> GetTenants(this SampleContext db)
         {
             return await _GetTenants(db).ToListAsync();
@@ -34,6 +38,11 @@ namespace TobyMosque.Sample.Service.Net.Queries
         internal static async Task<Tenant> GetTenantById(this SampleContext db, int tenantId)
         {
             return await _GetTenantById(db, tenantId);
+        }
+
+        internal static async Task<Session> GetSessionByToken(this SampleContext db, byte[] token)
+        {
+            return await _GetSessionByToken(db, token);
         }
     }
 }

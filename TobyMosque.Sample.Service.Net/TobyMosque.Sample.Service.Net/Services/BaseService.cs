@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using System.Linq;
 using TobyMosque.Sample.Service.Net.Models;
+using TobyMosque.Sample.Service.Net.Extensions;
 
 namespace TobyMosque.Sample.Service.Net.Services
 {
@@ -29,18 +30,15 @@ namespace TobyMosque.Sample.Service.Net.Services
         internal static Func<Guid?> getSessionId = () => default(Guid?);
         internal static Func<int> getTenantId = () => default(int);
 
-        public static async Task ConfigGetSessionId(Func<Guid?> getSessionId)
+        public static async Task ConfigDatabase(Func<Guid?> getSessionId, Func<int> getTenantId)
         {
-            if (getSessionId == null)
-                return;
-            BaseService.getSessionId = getSessionId;
-        }
-
-        public static async Task ConfigGetTenantId(Func<int> getTenantId)
-        {
-            if (getTenantId == null)
-                return;
-            BaseService.getTenantId = getTenantId;
+            BaseService.getSessionId = getSessionId ?? (() => default(Guid?));
+            BaseService.getTenantId = getTenantId ?? (() => default(int));
+            using (var db = BaseService.CreateSampleContext())
+            {
+                await db.Database.MigrateAsync();
+                db.Seed();
+            }
         }
 
         internal static SampleContext CreateSampleContext()

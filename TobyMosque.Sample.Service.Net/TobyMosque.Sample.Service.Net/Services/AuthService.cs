@@ -97,5 +97,16 @@ namespace TobyMosque.Sample.Service.Net.Services
                 return response;
             }
         }
+
+        public static async Task<DataResponse<DataEntities.Session>> GetSessionByToken(byte[] token)
+        {
+            using (var db = BaseService.CreateSampleContext())
+            {
+                var response = new DataResponse<DataEntities.Session>();
+                response.ResponseCode = 200;
+                response.Data = await db.GetSessionByToken(token);
+                return response;
+            }
+        }
     }
 }

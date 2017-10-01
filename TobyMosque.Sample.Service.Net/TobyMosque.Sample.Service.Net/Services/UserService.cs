@@ -35,6 +35,6 @@ namespace TobyMosque.Sample.Service.Net.Services
                 response.Data = true;
                 return response;
             }
-        }
+        }        
     }
 }
